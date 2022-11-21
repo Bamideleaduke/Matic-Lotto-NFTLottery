@@ -109,6 +109,8 @@ nav{
 }
 /* header section*/
 @media only screen and (min-width:768px) {
+/* header section*/
+
    .close-bar,.menu-bar{
     display: none;
    }
@@ -146,6 +148,7 @@ nav{
     padding: .3rem 1rem;
     margin: 0 1rem 0 2rem;
    }
+/* header section*/
    
 }
 @media only screen and (max-width:1071px){
@@ -155,5 +158,27 @@ nav{
     
 }
 /* Barakat end here */
+
+/* Hafsoh starts here */
+@media only screen and (max-width:768px){
+    
+}
+@media only screen and (max-width:1071px){
+    
+}
+@media only screen and (min-width:1071px){
+    
+}
+/* Hafsoh end here */
+
 /* Glory starts here */
+@media only screen and (max-width:768px){
+    
+}
+@media only screen and (max-width:1071px){
+    
+}
+@media only screen and (min-width:1071px){
+    
+}
 /* Glory end here */
