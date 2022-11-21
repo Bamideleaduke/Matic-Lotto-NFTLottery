@@ -1,0 +1,40 @@
+/* font*/
+
+/* general styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white:#ffffff;
+    --bg-black: #04010C;
+    --txt-color: #F3ECFE;
+    --purple-btn-bg: #5E1BA5;
+    --yellow-btn-bg: #F9BD25;
+    --red-btn-bg: #7B0421;
+    --icon-color: #924EDA;
+    --green-txt: #00FF85AB;
+   --red-gradient: linear-gradient(to bottom,#AB013E , #00AB013E );
+   --purple-gradient: linear-gradient(to bottom,#7744C6 , #00AB013E );
+   --green1-gradient: linear-gradient(to bottom,#07AD5E , #030718 );
+   --green2-gradient: linear-gradient(to bottom,#69890E , #030718 );
+}
+html,body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background: var(--bg-black);
+    color: var(--txt-color);
+    font-family: sans-serif;
+}
+img,video{
+    display: block;
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+/* general styling */
