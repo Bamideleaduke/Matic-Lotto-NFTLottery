@@ -38,15 +38,22 @@ img,video{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 ul{
     list-style-type: none;
 }
+li{
+    cursor: pointer;
+}
 /* icon */
 .logo-img{
     height: 30px;
+    cursor: pointer;
 }
-
+.fa-solid{
+    cursor: pointer;
+}
 .menu-bar{
     font-size: 25px;
 }
@@ -111,6 +118,35 @@ nav{
     text-align: center;
     font-size: 1rem;
     padding: 1.5rem 0;
+}
+.connect-btn:hover{
+    background-color: var(--bg-black);
+    color: var(--white);
+}
+/* connect wallet */
+.connect-wallet{
+    background-color: var(--bg-black);
+    padding: 0.7rem;
+    position: absolute;
+    display: block;
+    bottom: 32%;
+    width: 100%;
+}
+.wallet-link{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    cursor: pointer;
+}
+.wallet-link:hover{
+    border-bottom: 2px solid var(--txt-color);
+}
+.wallet-link img{
+    width: 17px;
+    height: 17px;
+}
+.wallet-link span, .wallet-link img{
+    margin-left: 2rem;
 }
 /* header section*/
 
@@ -322,6 +358,12 @@ margin: 0.5rem;
     padding: .5rem 1.5rem;
     margin: 0 1rem 0 2rem;
    }
+  .connect-wallet{
+    bottom: 0;
+    top: 2rem;
+    z-index: 1;
+    width: initial;
+  }
 /* header section*/
    /* hero */
    .hero-txt h1{
