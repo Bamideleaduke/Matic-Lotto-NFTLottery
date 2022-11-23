@@ -1,7 +1,7 @@
 
 /* general styling */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"); */
 
 * {
   margin: 0;
@@ -31,7 +31,7 @@ body {
   background: var(--bg-black);
   color: var(--txt-color);
   font-family: sans-serif;
-  max-width: 1400px;
+  /* max-width: 1400px; */
   margin-inline: auto;
 }
 main,
@@ -77,7 +77,7 @@ li {
 /* Barakat  starts here*/
 
 /* header section*/
-nav {
+/* nav {
   display: flex;
   flex-direction: column;
 }
@@ -95,7 +95,6 @@ nav {
 .collapsible {
   background-color: var(--txt-color);
   height: 100vh;
-  /* position: absolute; */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -131,9 +130,9 @@ nav {
 .connect-btn:hover {
   background-color: var(--bg-black);
   color: var(--white);
-}
+} */
 /* connect wallet */
-.connect-wallet {
+/* .connect-wallet {
   background-color: var(--bg-black);
   padding: 0.7rem;
   position: absolute;
@@ -157,7 +156,7 @@ nav {
 .wallet-link span,
 .wallet-link img {
   margin-left: 2rem;
-}
+} */
 /* header section*/
 
 /* hero */
@@ -334,7 +333,7 @@ nav {
 /* END OF HAFSAH'S PART */
 
 /* footer */
-footer {
+/* footer {
   margin-top: 4rem;
   padding: 0 2rem;
 }
@@ -368,7 +367,7 @@ footer {
 }
 .footer-nav li {
   margin: 0.5rem;
-}
+} */
 
 /* footer */
 @media only screen and (min-width: 600px) {
@@ -411,7 +410,7 @@ footer {
 }
 @media only screen and (min-width: 768px) {
   /* header section*/
-  .close-bar,
+  /* .close-bar,
   .menu-bar {
     display: none;
   }
@@ -425,8 +424,7 @@ footer {
   }
   .collapsible {
     background-color: transparent;
-    position: relative;
-    /* position: sticky; */
+    position: sticky;
     height: 5vh;
     top: 0.7rem;
     transform: translateY(0);
@@ -455,7 +453,7 @@ footer {
     top: 2rem;
     z-index: 1;
     width: initial;
-  }
+  } */
   /* header section*/
   /* hero */
   .hero-txt h1 {
@@ -471,7 +469,7 @@ footer {
   }
   /* hero */
   /* footer */
-  footer {
+  /* footer {
     position: relative;
     bottom: 0;
   }
@@ -488,7 +486,7 @@ footer {
 
   .footer-nav li {
     margin: 0 0.4rem;
-  }
+  } */
   /* footer */
 }
 
