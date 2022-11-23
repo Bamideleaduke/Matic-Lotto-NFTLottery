@@ -330,6 +330,16 @@ nav {
   color: #F3ECFE;
 }
 
+@media only screen and (max-width: 600px) {
+    .swiper-slide{
+        width: 20%;
+    }
+    img{
+        min-width: 100%;
+    }
+
+}
+
 /* END OF HAFSAH'S PART */
 
 /* footer */
@@ -531,6 +541,7 @@ footer {
 @media only screen and (max-width: 1071px) {
 }
 @media only screen and (min-width: 1071px) {
+
 }
 /* Hafsoh end here */
 
