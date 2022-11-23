@@ -333,41 +333,6 @@ li {
 /* END OF HAFSAH'S PART */
 
 /* footer */
-/* footer {
-  margin-top: 4rem;
-  padding: 0 2rem;
-}
-.social {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  margin: 1.5rem 0;
-}
-.social h3 {
-  font-size: 2rem;
-}
-.social-icon {
-  display: flex;
-}
-.copyright {
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  font-size: 0.7rem;
-}
-.copyright span {
-  margin: 0.5rem 0;
-  text-align: center;
-}
-.footer-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.footer-nav li {
-  margin: 0.5rem;
-} */
 
 /* footer */
 @media only screen and (min-width: 600px) {
@@ -469,24 +434,6 @@ li {
   }
   /* hero */
   /* footer */
-  /* footer {
-    position: relative;
-    bottom: 0;
-  }
-  .social {
-    margin: 1.5rem;
-  }
-  .social h3 {
-    font-size: 2rem;
-    margin: 2rem 0 0.5rem 0;
-  }
-  .copyright {
-    flex-direction: row;
-  }
-
-  .footer-nav li {
-    margin: 0 0.4rem;
-  } */
   /* footer */
 }
 
