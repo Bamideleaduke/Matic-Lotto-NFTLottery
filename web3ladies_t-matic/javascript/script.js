@@ -1,3 +1,4 @@
+
 // header collapsible
 const toggle = document.querySelector(".menu-bar");
 const close = document.querySelector(".close-bar");
@@ -15,23 +16,7 @@ navItem.forEach(link => {
     collapsible.classList.toggle('hide')
     })
 });
-// connect wallet
-const connectWallet = document.querySelector(".connect-btn");
-const walletOption = document.querySelector("#connect-wallet");
-const closeOpt = document.querySelector(".close-opt");
-const walletLink = document.querySelectorAll(".wallet-link");
-connectWallet.addEventListener("click",() => {
-  walletOption.style.display = "initial"
-})
-closeOpt.addEventListener("click",() => {
-  walletOption.style.display = "none"
-})
-walletLink.forEach(wallet => {
-    wallet.addEventListener("click", ()=>{
-    walletOption.style.display = "none"
-    collapsible.classList.toggle('hide')
-    })
-});
+
 
 
 // Hafsah's Slider
@@ -56,3 +41,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+
+
