@@ -1,4 +1,3 @@
-
 /* general styling */
 /* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"); */
@@ -173,12 +172,21 @@ li {
 /* hero */
 
 /* HAFSAH'S PART */
+.lottery-tag {
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 150%;
+  color: #F3ECFE;
+  text-align: center;
+}
 .swiper-div {
-    overscroll-behavior-x: none;
+  overscroll-behavior-x: none;
 }
 ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 .swiper-slide {
   border: 1px solid;
@@ -187,11 +195,9 @@ li {
   margin-left: 10px;
 }
 
-
 .details-container {
   display: flex;
   flex-direction: column;
-
 }
 .sold-out-btn {
   height: 18px;
@@ -202,10 +208,9 @@ li {
   line-height: 18px;
   color: #000;
   margin-bottom: 10px;
-  padding: 3px;
-  padding-top: 10px;
-
-  
+  text-align: center;
+  /* padding: 3px; */
+  /* padding-top: 10px; */
 }
 .btn-div {
   justify-content: center;
@@ -256,50 +261,53 @@ li {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #F3ECFE;
+  color: #f3ecfe;
 }
 
-.user1{
-    background-image: var(--red-to-blue-gradient);
+.user1 {
+  background-image: var(--red-to-blue-gradient);
 }
-.user2{
-    background-image:var(--purple-to-blue-gradient) ;
+.user2 {
+  background-image: var(--purple-to-blue-gradient);
 }
-.user3{
-    background-image: var(--green1-gradient);
+.user3 {
+  background-image: var(--green1-gradient);
 }
-.user4{
-    background-image: var(--green2-gradient);
+.user4 {
+  background-image: var(--green2-gradient);
 }
-
-
-
 
 @media only screen and (max-width: 600px) {
-    /* FOR SMALL SCREEN */
-    .swiper-slide{
-        width: 100% !important;
-        min-width: 70%;
-        border: 4px solid;
-    }
-    .sold-out-btn{
-        font-size: 8px;
-        line-height: 5px;
-    }
-    .btn-div{
-        padding: 2px;
-        width: 50px;
-    }
-    img{
-        min-width: 100%;
-    }
+  /* FOR SMALL SCREEN */
+  .swiper-slide {
+    width: 100% !important;
+    min-width: 70%;
+  }
+  .sold-out-btn {
+    font-size: 8px;
+    line-height: 5px;
+  }
+  .btn-div {
+    padding: 2px;
+    width: 50px;
+  }
+  img {
+    min-width: 100%;
+  }
 }
 @media only screen and (min-width: 600px) {
-    /* FOR LARGE SCREEN */
-
+  /* FOR LARGE SCREEN */
+  .swiper-slide {
+    width: 22% !important;
+    min-width: 10%;
+  }
+  .swiper-div {
+    overflow-x: hidden !important;
+    margin: auto;
+    width: 90%;
+  }
 }
 /* END OF HAFSAH'S PART */
-
 
 /* footer */
 
@@ -344,7 +352,7 @@ li {
 }
 @media only screen and (min-width: 768px) {
   /* header section*/
-  
+
   /* header section*/
   /* hero */
   .hero-txt h1 {
@@ -403,7 +411,6 @@ li {
 @media only screen and (max-width: 1071px) {
 }
 @media only screen and (min-width: 1071px) {
-
 }
 /* Hafsoh end here */
 
