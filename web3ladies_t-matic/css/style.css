@@ -21,6 +21,7 @@
   --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e);
   --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718);
   --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e);
+  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6, #030718);
   --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718);
   --green2-gradient: linear-gradient(to bottom, #69890e, #030718);
 }
@@ -183,7 +184,6 @@ li {
   border: 1px solid;
   max-width: 25%;
   padding: 10px;
-  background-image: var(--red-to-blue-gradient);
   margin-left: 10px;
 }
 
@@ -258,6 +258,22 @@ li {
   line-height: 150%;
   color: #F3ECFE;
 }
+
+.user1{
+    background-image: var(--red-to-blue-gradient);
+}
+.user2{
+    background-image:var(--purple-to-blue-gradient) ;
+}
+.user3{
+    background-image: var(--green1-gradient);
+}
+.user4{
+    background-image: var(--green2-gradient);
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
     /* FOR SMALL SCREEN */
