@@ -1,4 +1,3 @@
-
 /* general styling */
 /* @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"); */
@@ -18,11 +17,12 @@
   --red-btn-bg: #7b0421;
   --icon-color: #924eda;
   --green-txt: #00ff85ab;
-  --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e);
-  --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718);
-  --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e);
-  --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718);
-  --green2-gradient: linear-gradient(to bottom, #69890e, #030718);
+  --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e 50%);
+  --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718 50%);
+  --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e 50%);
+  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6 , #030718 50%);
+  --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718 50%);
+  --green2-gradient: linear-gradient(to bottom, #69890e, #030718 50%);
 }
 html,
 body {
@@ -33,6 +33,7 @@ body {
   font-family: sans-serif;
   /* max-width: 1400px; */
   margin-inline: auto;
+  overflow-y: scroll;
 }
 main,
 footer {
@@ -171,23 +172,32 @@ li {
 /* hero */
 
 /* HAFSAH'S PART */
-.swiper {
-  width: 400px;
-  height: 400px;
+.lottery-tag {
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 150%;
+  color: #f3ecfe;
   text-align: center;
-  /* align-self: center; */
+}
+.swiper-div {
+  overscroll-behavior-x: none;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
 }
 .swiper-slide {
   border: 1px solid;
-  max-width: 50%;
+  max-width: 25%;
   padding: 10px;
-  background-image: var(--red-to-blue-gradient);
+  margin-left: 10px;
 }
 
 .details-container {
   display: flex;
   flex-direction: column;
-
 }
 .sold-out-btn {
   height: 18px;
@@ -198,11 +208,14 @@ li {
   line-height: 18px;
   color: #000;
   margin-bottom: 10px;
+  text-align: center;
+  /* padding: 3px; */
+  /* padding-top: 10px; */
 }
 .btn-div {
   justify-content: center;
   align-items: center;
-  padding: 8px;
+  /* padding: 8px; */
   gap: 8px;
   width: 77px;
   height: 30px;
@@ -214,7 +227,7 @@ li {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 150%;
 }
 .angry-joe {
@@ -229,7 +242,7 @@ li {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 150%;
 }
 .eth {
@@ -248,9 +261,96 @@ li {
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
-  color: #F3ECFE;
+  color: #f3ecfe;
 }
 
+.user1 {
+  background-image: var(--red-to-blue-gradient);
+}
+.user2 {
+  background-image: var(--purple-to-blue-gradient);
+}
+.user3 {
+  background-image: var(--green1-gradient);
+}
+.user4 {
+  background-image: var(--green2-gradient);
+}
+
+.lucky-number-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px !important;
+  width: 85%;
+  margin: auto;
+}
+.lucky-tag {
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #ffffff;
+  width: 300px;
+}
+.lucky-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  background-color: #1E1E1E;
+}
+.number{
+    padding: 10px;
+    background-color: var(--green-txt);
+    color: white;
+    box-sizing: border-box;
+    margin:4px;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  /* FOR SMALL SCREEN */
+  .swiper-slide {
+    width: 100% !important;
+    min-width: 70%;
+  }
+  .sold-out-btn {
+    font-size: 8px;
+    line-height: 5px;
+  }
+  .btn-div {
+    padding: 2px;
+    width: 50px;
+  }
+  img {
+    min-width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* FOR LARGE SCREEN */
+  .swiper-slide {
+    width: 22% !important;
+    min-width: 10%;
+  }
+  .swiper-div {
+    overflow-x: hidden !important;
+    margin: auto;
+    width: 90%;
+  }
+  .btn-div{
+    padding-top: 5px;
+  }
+ 
+
+}
 /* END OF HAFSAH'S PART */
 
 /* footer */
@@ -296,7 +396,7 @@ li {
 }
 @media only screen and (min-width: 768px) {
   /* header section*/
-  
+
   /* header section*/
   /* hero */
   .hero-txt h1 {
