@@ -17,12 +17,12 @@
   --red-btn-bg: #7b0421;
   --icon-color: #924eda;
   --green-txt: #00ff85ab;
-  --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e);
-  --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718);
-  --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e);
-  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6, #030718);
-  --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718);
-  --green2-gradient: linear-gradient(to bottom, #69890e, #030718);
+  --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e 50%);
+  --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718 50%);
+  --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e 50%);
+  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6 , #030718 50%);
+  --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718 50%);
+  --green2-gradient: linear-gradient(to bottom, #69890e, #030718 50%);
 }
 html,
 body {
@@ -178,7 +178,7 @@ li {
   font-weight: 500;
   font-size: 64px;
   line-height: 150%;
-  color: #F3ECFE;
+  color: #f3ecfe;
   text-align: center;
 }
 .swiper-div {
@@ -227,7 +227,7 @@ li {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 150%;
 }
 .angry-joe {
@@ -242,7 +242,7 @@ li {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 150%;
 }
 .eth {
@@ -277,6 +277,45 @@ li {
   background-image: var(--green2-gradient);
 }
 
+.lucky-number-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 50px !important;
+  width: 85%;
+  margin: auto;
+}
+.lucky-tag {
+  font-family: "Clash Display Variable";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  color: #ffffff;
+  width: 300px;
+}
+.lucky-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  background-color: #1E1E1E;
+}
+.number{
+    padding: 10px;
+    background-color: var(--green-txt);
+    color: white;
+    box-sizing: border-box;
+    margin:4px;
+    margin-top: 25px;
+    border-radius: 2px;
+}
+
 @media only screen and (max-width: 600px) {
   /* FOR SMALL SCREEN */
   .swiper-slide {
@@ -306,6 +345,11 @@ li {
     margin: auto;
     width: 90%;
   }
+  .btn-div{
+    padding-top: 5px;
+  }
+ 
+
 }
 /* END OF HAFSAH'S PART */
 
