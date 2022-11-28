@@ -315,7 +315,7 @@ li {
   box-sizing: border-box;
   margin: 4px;
   margin-top: 25px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -541,9 +541,9 @@ li {
     background: var(--red-to-blue-gradient);
     width: 70%;
    }
-   .fa-angle-left {
+   /* .fa-angle-left {
     margin-left: ;
-   }
+   } */
    .matic{
     padding-bottom: 3rem;
    }
