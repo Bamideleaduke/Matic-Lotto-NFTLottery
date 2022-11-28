@@ -333,6 +333,8 @@ nav {
 
 /* END OF HAFSAH'S PART */
 
+
+
 /* footer */
 footer {
   margin-top: 4rem;
@@ -536,5 +538,141 @@ footer {
 /* Hafsoh end here */
 
 /* Glory starts here */
+@media only screen and (min-width: 768px) {
+  .glory-matic-lotto {
+    align-items: center;
+    display: flex;justify-content: space-evenly;
+    padding-top: 3rem;
+   }
+   .glory-matic-img {
+    background: var(--red-to-blue-gradient);
+   }
+   
+   .matic{
+    padding-bottom: 3rem;
+   }
+   .matic h3 {
+    font-size: 2rem;
+   }
+   .glory-matic-note p {
+    color: grey;
+   }
+   .glory-matic-note button {
+    background: var(--purple-btn-bg);
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.6rem;
+   }
+   .team h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+   }
+   .team-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .team-images h6 {
+    text-align: center;
+    padding-top: 0.5rem;
+   }
+  
+}
+
+@media only screen and (max-width: 768px) {
+  /* matic-lotto */
+  .glory-matic-lotto {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 3rem;
+   }
+   .glory-matic-img {
+    background: var(--red-to-blue-gradient);
+    width: 70%;
+   }
+   .fa-angle-left {
+    margin-left: ;
+   }
+   .matic{
+    padding-bottom: 3rem;
+   }
+   .matic h3 {
+    font-size: 2rem;
+   }
+   .glory-matic-note {
+    padding-top: 5rem;
+    width: 70%;
+    text-align: center;
+   }
+   .glory-matic-note p {
+    color: grey;
+    line-height: 1.5rem;
+   }
+   .glory-matic-note button {
+    background: var(--purple-btn-bg);
+    color: white;
+    padding: 0.7rem;
+    margin-top: 0.6rem;
+   }
+   .team h3 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 3rem;
+   }
+   .team-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .team-images h6 {
+    text-align: center;
+    padding-top: 0.5rem;
+   }
+}
+@media only screen and (min-width: 1071px) {
+  /* matic-lotto */
+ .glory-matic-lotto {
+  align-items: center;
+  display: flex;justify-content: space-evenly;
+  padding-top: 3rem;
+ }
+ .glory-matic-img {
+  background: var(--red-to-blue-gradient);
+ }
+ .matic{
+  padding-bottom: 3rem;
+ }
+ .matic h3 {
+  font-size: 2rem;
+ }
+ .glory-matic-note p {
+  color: grey;
+ }
+ .glory-matic-note button {
+  background: var(--purple-btn-bg);
+  color: white;
+  padding: 0.7rem;
+  margin-top: 0.6rem;
+ }
+ .team h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 3rem;
+ }
+ .team-images{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ .team-images h6 {
+  text-align: center;
+  padding-top: 0.5rem;
+ }
+}
+
+
 
 /* Glory end here */
