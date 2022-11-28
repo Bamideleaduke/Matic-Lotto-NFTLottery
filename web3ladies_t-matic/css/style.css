@@ -184,6 +184,7 @@ li {
 }
 .swiper-div {
   overscroll-behavior-x: none;
+ 
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -332,7 +333,7 @@ li {
     padding: 2px;
     width: 50px;
   }
-  img {
+  .hafs-img {
     min-width: 100%;
   }
 }
