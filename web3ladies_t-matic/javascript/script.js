@@ -1,3 +1,4 @@
+
 // header collapsible
 const toggle = document.querySelector(".menu-bar");
 const close = document.querySelector(".close-bar");
@@ -15,6 +16,7 @@ navItem.forEach(link => {
     collapsible.classList.toggle('hide')
     })
 });
+
 // connect wallet
 const connectWallet = document.querySelector(".connect-btn");
 const walletOption = document.querySelector("#connect-wallet");
@@ -32,6 +34,9 @@ walletLink.forEach(wallet => {
     collapsible.classList.toggle('hide')
     })
 });
+
+// connect wallet
+
 
 
 // Hafsah's Slider
@@ -56,3 +61,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-scrollbar',
   },
 });
+
+
+
+
