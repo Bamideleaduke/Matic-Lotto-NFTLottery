@@ -20,7 +20,7 @@
   --red-gradient: linear-gradient(to bottom, #ab013e, #00ab013e 50%);
   --red-to-blue-gradient: linear-gradient(to bottom, #ab013e, #030718 50%);
   --purple-gradient: linear-gradient(to bottom, #7744c6, #00ab013e 50%);
-  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6 , #030718 50%);
+  --purple-to-blue-gradient: linear-gradient(to bottom, #7744c6, #030718 50%);
   --green1-gradient: linear-gradient(to bottom, #07ad5e, #030718 50%);
   --green2-gradient: linear-gradient(to bottom, #69890e, #030718 50%);
 }
@@ -180,9 +180,11 @@ li {
   line-height: 150%;
   color: #f3ecfe;
   text-align: center;
+  margin-top: 30px;
 }
 .swiper-div {
   overscroll-behavior-x: none;
+ 
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -304,16 +306,16 @@ li {
   align-items: center;
   padding: 8px;
   gap: 8px;
-  background-color: #1E1E1E;
+  background-color: #1e1e1e;
 }
-.number{
-    padding: 10px;
-    background-color: var(--green-txt);
-    color: white;
-    box-sizing: border-box;
-    margin:4px;
-    margin-top: 25px;
-    border-radius: 2px;
+.number {
+  padding: 10px;
+  background-color: var(--green-txt);
+  color: white;
+  box-sizing: border-box;
+  margin: 4px;
+  margin-top: 25px;
+  border-radius: 2px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -322,6 +324,7 @@ li {
     width: 100% !important;
     min-width: 70%;
   }
+
   .sold-out-btn {
     font-size: 8px;
     line-height: 5px;
@@ -330,10 +333,34 @@ li {
     padding: 2px;
     width: 50px;
   }
-  img {
+  .hafs-img {
     min-width: 100%;
   }
 }
+
+@media only screen and (max-width: 415px) {
+  /* FOR IPHONE XR SCREEN SIZE */
+  .lottery-tag {
+    font-size: 40px;
+  }
+  .lucky-tag{
+    font-size: 30px;
+    width: 50%;
+  }
+  .number{
+    font-size: x-small;
+  }
+  .lucky-btn{
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 150%;
+    align-items: center;
+    padding: 8px;
+    gap: 4px;
+  
+  }
+}
+
 @media only screen and (min-width: 600px) {
   /* FOR LARGE SCREEN */
   .swiper-slide {
@@ -345,11 +372,9 @@ li {
     margin: auto;
     width: 90%;
   }
-  .btn-div{
+  .btn-div {
     padding-top: 5px;
   }
- 
-
 }
 /* END OF HAFSAH'S PART */
 
