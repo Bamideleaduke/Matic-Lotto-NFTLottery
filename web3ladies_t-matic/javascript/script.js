@@ -29,7 +29,7 @@ closeOpt.addEventListener("click",() => {
   walletOption.style.display = "none"
 })
 walletLink.forEach(wallet => {
-    wallet.addEventListener("click", ()=>{
+    wallet.addEventListener("click", () =>{
     walletOption.style.display = "none"
     collapsible.classList.toggle('hide')
     })
