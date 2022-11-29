@@ -69,4 +69,41 @@
     place-content: center;
     margin-top: 2rem;
   }
+<<<<<<< HEAD
+/* Glory's part */
+@media only screen and (max-width:768px){
+  .nft{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width:1017px){
+  .nft-heading{
+text-align: center;
+  }
+  .nft-heading p{
+    padding-bottom: 3rem;
+  }
+  h1 {
+  padding-bottom: 1rem;
+}
+  .nft{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1.6rem;
+  }
+  h3 {
+    color:#76E1B5;
+    ;
+    padding: 0.6rem 0 00;
+  }
+  h4 {
+    padding: 0.6rem 0;
+  }
+
+  
+}
+=======
 /* glory */
+>>>>>>> c9a5b57164710de616dd09c0bc3e0d9a6efe37a5
