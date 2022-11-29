@@ -496,6 +496,8 @@ li {
     flex-wrap: wrap;
     justify-content: center;
    }
+
+   
    .team-images h6 {
     text-align: center;
     padding-top: 0.5rem;
@@ -516,9 +518,7 @@ li {
     background: var(--red-to-blue-gradient);
     width: 70%;
    }
-   .fa-angle-left {
-    margin-left: ;
-   }
+  
    .matic{
     padding-bottom: 3rem;
    }
@@ -549,6 +549,7 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 50%;
    }
    .team-images h6 {
     text-align: center;
