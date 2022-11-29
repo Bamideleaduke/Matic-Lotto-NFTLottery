@@ -47,7 +47,7 @@
                     <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
                     <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
                     <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
-                    <li class="wallet-link">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link connect1" id="connect" onclick="myFunction();" >Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
                     <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
                 </ul>
                 </div>
@@ -56,6 +56,57 @@
         </nav>
     </header>
     <main>
+
+    <!--Hafsah's part > CONNECT WALLETS -->
+
+    <div class="connect-container" style="display: none;">
+        <main>
+        <div style="width: 95%; margin: auto">
+          <h3 class="connect-header">Connect with MetaMask</h3>
+          <p class="connect-tag">Select the account(s) to use on this site</p>
+          <p class="new-account">New account</p>
+  
+          <div  class="middle-div">
+            <i class="fa fa-solid fa-square-check"></i>
+            <div class="gradient"></div>
+            <p class="matic-ptag">Account 1 (0x08g... <br> 0 MATIC</p>
+          </div>
+        </main>
+  
+        <footer>
+          <p class="modal-footer">Connect with only the sites you trust</p>
+          <div class="foot">
+            <button class="cancel">Cancel</button>
+            <button class="next" onclick="nextConnect();">Next</button>
+          </div>
+        </footer> 
+      </div>
+  
+      <div class="connect-container2" style="display: none;">
+        <main>
+        <div style="width: 95%; margin: auto">
+          <h3 class="connect-header">Connect to Account 1</h3>
+          <p class="connect-tag" id="wallet-name">(0x08g...eef)</p>
+          <div  class="middle-div">
+            <i class="fa fa-solid fa-eye"></i>
+            <div class="gradient"></div>
+            <p class="matic-ptag">Account 1 (0x08g... <br> 0 MATIC</p>
+          </div>
+        </main>
+  
+        <footer>
+          <p class="modal-footer">Connect with only the sites you trust</p>
+          <div class="foot">
+            <button class="cancel">Cancel</button>
+            <button class="next" id="next" >Next</button>
+          </div>
+        </footer> 
+      </div>
+  
+
+    <!-- END OF CONNECT WALLETS  -->
+
+
     <!-- Barakat -->
     
     <!-- Barakat -->
@@ -70,6 +121,8 @@
         
     </section>
     <!-- Hafsoh -->
+
+
 
     <!-- Glory -->
     <section>
@@ -100,5 +153,6 @@
     </footer>
     <!--custom script  -->
     <script src="./javascript/script.js"></script>
+    <script src="./javascript/claim-reward.js"></script>
 </body>
 </html>
