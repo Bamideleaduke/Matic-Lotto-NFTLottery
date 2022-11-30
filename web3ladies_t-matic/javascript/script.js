@@ -29,38 +29,13 @@ closeOpt.addEventListener("click",() => {
   walletOption.style.display = "none"
 })
 walletLink.forEach(wallet => {
-    wallet.addEventListener("click", ()=>{
+    wallet.addEventListener("click", () =>{
     walletOption.style.display = "none"
     collapsible.classList.toggle('hide')
     })
 });
 
 // connect wallet
-
-
-
-// Hafsah's Slider
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 
 
 

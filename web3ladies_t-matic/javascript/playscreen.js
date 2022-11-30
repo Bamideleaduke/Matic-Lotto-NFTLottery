@@ -3,23 +3,32 @@
 // play game event
   const inputBox = document.querySelectorAll(".num-input")
   const numBtn = document.querySelectorAll(".num");
-  console.log(inputBox);
+  // console.log(inputBox);
  
   // select number
   let number;
-  numBtn.forEach(num => {
-      num.addEventListener("click",(e) => {
-      number =  e.target.textContent
-      console.log(number);
-    })
+  let value = Array(6).fill(null) ;
+
+  function playGame(e) {
+    number =  e.target.textContent
+    for (let i = 0; i < value.length; i++) {
+      if(value[i] !== null)  continue;
+      value[i] = number;
+      break;
+    }
+
+    inputBox.forEach((ele,idx)=> {
+      ele.textContent = value[idx]
+      console.log(value);
+    });
+    // this.removeEventListener("click",playGame)
+  }
+  numBtn.forEach(num => { 
+      num.addEventListener("click",playGame)
   });
     // get value
-    let value ;
-    inputBox.forEach(ele=> {
-         value = [...ele.innerHTML]
-      // console.log(ele.textContent);
-    });
-    console.log(value);
+    
+    // console.log(value);
 // Game section
 const gameCard = document.querySelector(".game-num");
 let firstTouch;
