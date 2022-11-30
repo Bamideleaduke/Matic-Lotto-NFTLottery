@@ -10,15 +10,15 @@
 
     <!-- custom styling -->
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/reward.css">
+    <link rel="stylesheet" href="./css/claim-reward.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
-    <title>Reward</title>
+    <title>Draw result</title>
 </head>
 <body>
     <!-- arrow icons -->
     <!-- <span class="angle-right"><i class="fa-solid fa-angle-right"></i></span> -->
     <!-- <span class="angle-left"><i class="fa-solid fa-angle-left"></i></span> -->
-    <!-- <span class"right-arrow"><i class="fa-solid fa-arrow-right"></i></span> -->
+    <!-- <span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span> -->
     <!-- Barakat -->
     <header>
         <nav>
@@ -34,9 +34,9 @@
             </div>
             <div class="collapse">
                 <ul class="nav-menu">
-                    <li class="nav-item"><a class="nav-link" href="index.html" target="_parent">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html" target="_parent">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Lotteries</a></li>
-                    <li class="nav-item" ><a class="nav-link" href="./result.html" target="_parent">Result</a></li>
+                    <li class="nav-item" ><a class="nav-link" href="./result.html" target="">Result</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">How to play</a></li>
                 </ul>
@@ -47,7 +47,7 @@
                     <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
                     <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
                     <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
-                    <li class="wallet-link">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link connect1" id="connect" onclick="myFunction();" >Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
                     <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
                 </ul>
                 </div>
@@ -57,44 +57,78 @@
     </header>
     <main>
 
-<!-- >>>>>>> 629f1ae84574bb2bbaf6d4fa0394f855b9c5820b -->
-    <!-- Glory -->
-        <div class="nft-reward">
-            <div class="nft-heading">
-                <h1>Claim your Matic Lotto NFT Reward</h1>
-                <p>
-                    Enter your ENS or wallet address to mint. Minting is free, no cost, ONLY gas.</p>
-            </div>
-           
-            <div class="nft">
-                <div class="nft-image">
-<img src="./assets/Frame 6543.png" alt="">
-                </div>
-                <div class="nft-note">
-    <h2>
-        Matic Lotto NFT Reward
-    </h2>
-    <h3>
-        Description
-    </h3>
-    <h4>
-        Matic Lotto NFT - Created by Matic Lotto Team 
-        <br>
-    </h4>
-    <p> This token is a verifiable ticket (limited 9,999) <br>
-       for admission to BeMore 2022, which is a 24 <br>
-       hours virtual super conference exclusively  <br>
-       created for ADPList members & the Design and Product <br> community. Sponsored by Figma, Webflow, <br> Airmeet, Slack, Betafi, Amplitude and Bloomberg. 
-<br> <br>
-       Time: September 21st, 2022 <br> 
-       Location: Virtual
-    </p>
-                </div>
-            </div>
-           
-        </div>
-    <!-- Glory -->
+    <!--Hafsah's part > CONNECT WALLETS -->
+
+    <div class="connect-container" style="display: none;">
+        <main>
+        <div style="width: 95%; margin: auto">
+          <h3 class="connect-header">Connect with MetaMask</h3>
+          <p class="connect-tag">Select the account(s) to use on this site</p>
+          <p class="new-account">New account</p>
+  
+          <div  class="middle-div">
+            <i class="fa fa-solid fa-square-check"></i>
+            <div class="gradient"></div>
+            <p class="matic-ptag">Account 1 (0x08g... <br> 0 MATIC</p>
+          </div>
+        </main>
+  
+        <footer>
+          <p class="modal-footer">Connect with only the sites you trust</p>
+          <div class="foot">
+            <button class="cancel">Cancel</button>
+            <button class="next" onclick="nextConnect();">Next</button>
+          </div>
+        </footer> 
+      </div>
+  
+      <div class="connect-container2" style="display: none;">
+        <main>
+        <div style="width: 95%; margin: auto">
+          <h3 class="connect-header">Connect to Account 1</h3>
+          <p class="connect-tag" id="wallet-name">(0x08g...eef)</p>
+          <div  class="middle-div">
+            <i class="fa fa-solid fa-eye"></i>
+            <div class="gradient"></div>
+            <p class="matic-ptag">Account 1 (0x08g... <br> 0 MATIC</p>
+          </div>
+        </main>
+  
+        <footer>
+          <p class="modal-footer">Connect with only the sites you trust</p>
+          <div class="foot">
+            <button class="cancel">Cancel</button>
+            <button class="next" id="next" >Next</button>
+          </div>
+        </footer> 
+      </div>
+  
+
+    <!-- END OF CONNECT WALLETS  -->
+
+
+    <!-- Barakat -->
     
+    <!-- Barakat -->
+    <!-- Hafsoh -->
+    <section>
+        <p class="congrats">Congratulations  &#129321;</p>
+        <p class="matic">Your Matic Lotto NFT is here</p>
+        
+        <div class="img-div">
+            <img src="./assets/player1.png" alt="" class="matic-img" />
+        </div>
+        
+    </section>
+    <!-- Hafsoh -->
+
+
+
+    <!-- Glory -->
+    <section>
+
+    </section>
+    <!-- Glory -->
     </main>
 
     <footer>
@@ -119,5 +153,6 @@
     </footer>
     <!--custom script  -->
     <script src="./javascript/script.js"></script>
+    <script src="./javascript/claim-reward.js"></script>
 </body>
 </html>
