@@ -1,4 +1,3 @@
-const { ethers } = require("ethers");
 import "./LotteryABI.json";
 
 
