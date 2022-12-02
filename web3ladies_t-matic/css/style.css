@@ -129,6 +129,7 @@ li {
   font-size: 0.8rem;
 }
 .read-more {
+  /* cursor: pointer; */
   font-weight: lighter;
   color: var(--white);
   padding: 0.6rem 1.2rem;
@@ -307,6 +308,11 @@ li {
   padding: 8px;
   gap: 8px;
   background-color: #1e1e1e;
+  cursor: pointer;
+}
+.lucky-btn:hover{
+  background-color: var(--white);
+  color: var(--icon-color);
 }
 .number {
   padding: 10px;
