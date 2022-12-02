@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- NFT Loto contract link -->
+    <script type="text/javascript" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script>
+    <!-- <script src="https://cdn.ethers.io/scripts/ethers-v3.min.js"
+        charset="utf-8"
+        type="text/javascript">
+    </script> -->
+    <!-- <script type="application/javascript" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script> -->
     <!-- fontawesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
@@ -39,14 +46,14 @@
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#how-to-play">How to play</a></li>
                 </ul>
-                <div class="btn">
-                    <a class="connect-btn">Connect Wallet</a>
+                <div class="btn" >
+                    <a class="connect-btn" id="accountArea">Connect Wallet</a>
                 <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
                 <ul class="connect-wallet" id="connect-wallet">
                     <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
                     <li class="wallet-link">Phantom <img src="web3ladies_t-matic/assets/icons/phantom.png" alt=""></li>
                     <li class="wallet-link" >Slope <img src="web3ladies_t-matic/assets/icons/slope.png" alt=""></li>
-                    <li class="wallet-link">Metamask <img src="web3ladies_t-matic/assets/icons/metamask.png" alt="metamask"></li>
+                    <li c lass="wallet-link" onclick="connectMetamask()"> Metamask <img src="web3ladies_t-matic/assets/icons/metamask.png" alt="metamask"></li>
                     <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
                 </ul>
                 </div>
@@ -436,9 +443,9 @@
         <div class="social">
             <h3>FOLLOW US</h3>
             <div class="social-icon">
-                <img src="./assets/icons/bxl-twitter.svg.png" alt="">
-                <img src="./assets/icons/bxl-instagram.svg.png" alt="">
-                <img src="./assets/icons/bxl-discord.svg.png" alt="">
+                <img src="web3ladies_t-matic/assets/icons/bxl-twitter.svg.png" alt="">
+                <img src="web3ladies_t-matic/assets/icons/bxl-instagram.svg.png" alt="">
+                <img src="web3ladies_t-matic/assets/icons/bxl-discord.svg.png" alt="">
             </div>
         </div>
         <div class="copyright">
@@ -452,10 +459,13 @@
             </ul>
         </div>
     </footer>
+    <!-- NFT Lotto contract functions -->
+    <script src="./web3ladies_t-matic/javascript/blockchain.js"></script>
+    <!-- <script src="web3ladies_t-matic/javascript/lotto_NFT_094639.js"></script> -->
     <!-- Swipper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!--custom script  -->
     <script src="web3ladies_t-matic/javascript/script.js"></script>
-    <script src="./javascript/claim-reward.js"></script>
+    <script src="web3ladies_t-matic/javascript/claim-reward.js"></script>
 </body>
 </html>

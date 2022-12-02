@@ -1,10 +1,15 @@
-const { ethers } = require("ethers");
-import "./LotteryABI.json";
+import { providers, Contract, utils } from "ethers";
 
-
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-await provider.send("eth_requestAccounts", []);
-const signer = provider.getSigner();
+try {
+	const connectAddress = async () => {
+		const provider = new providers.Web3Provider(window.ethereum);
+		await provider.send("eth_requestAccounts", []);  
+		const signer = provider.getSigner();
+	}
+	
+} catch (error) {
+	console.log(error)
+}
 
 const lotteryAddress = "0x311686cf48d67ce5e41ef17c778d590bae532459";
 const lotteryABI = [
@@ -303,32 +308,37 @@ const lotteryABI = [
 	}
 ];
 
-const lotteryContract = new ethers.Contract(lotteryAddress, lotteryABI, provider);
+const lotteryContract = new Contract(lotteryAddress, lotteryABI, providers);
 
-const lotteryWithSigner = contract.connect(signer);
+const lotteryWithSigner = Contract.connect(signer);
 
 const participate = async() => {
-	let participating = await lotteryContract.participate(_firtNum,_secondNum,_thirdNum, {value: ethers.utils.parseEther(1)});
-	await participate.wait();
+	const provider = new providers.Web3Provider(window.ethereum);
+	await provider.send("eth_requestAccounts", []);
+	const signer = provider.getSigner();
+	const lotteryWithSigner = contract.connect(signer);
+	let participating = await lotteryContract.participate(_firtNum,_secondNum,_thirdNum, {value: utils.parseEther(1)});
 }
-
 const roundCreation = async() => {
+	const provider = new providers.Web3Provider(window.ethereum);
+	await provider.send("eth_requestAccounts", []);
+	const signer = provider.getSigner();
+	const lotteryWithSigner = contract.connect(signer);
 	let _roundCreate = await lotteryContract.createRound(_round);
-	await _roundCreate.wait();
 }
 
 const pickwinner = async() => {
-	let _selectWinner = await lotteryContract.selectWinner();
-	await _selectWinner.wait();
+	const provider = new providers.Web3Provider(window.ethereum);
+	await provider.send("eth_requestAccounts", []);
+	const signer = provider.getSigner();
+	const lotteryWithSigner = contract.connect(signer);
+	let selectWinner = await lotteryContract.selectWinner();
 }
 
 const claimPrize = async() => {
+	const provider = new providers.Web3Provider(window.ethereum);
+	await provider.send("eth_requestAccounts", []);
+	const signer = provider.getSigner();
+	const lotteryWithSigner = contract.connect(signer);
 	let prizeClaim = await lotteryContract.claimPrize();
-	await prizeClaim.wait();
 } 
-
-const getCurrentRound = await lotteryContract.round();
-const _winningNumbers = await lotteryContract.winner();
-const _winningAddress = await lotteryContract.winningAddress();
-const _winningTime = await lotteryContract.winningTime();
-const _adminAddress = await lotteryContract.admin();

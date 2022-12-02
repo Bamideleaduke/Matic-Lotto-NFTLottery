@@ -1,4 +1,5 @@
 
+
 // header collapsible
 const toggle = document.querySelector(".menu-bar");
 const close = document.querySelector(".close-bar");
