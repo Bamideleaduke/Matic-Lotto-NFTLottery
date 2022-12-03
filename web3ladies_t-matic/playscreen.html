@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- NFT Loto contract link -->
+    <script type="text/javascript" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script>
     <!-- fontawesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -40,14 +42,14 @@
                     <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">How to play</a></li>
                 </ul>
-                <div class="btn">
-                <a class="connect-btn">Connect Wallet</a>
+                <div class="btn" >
+                <a class="connect-btn" id="accountArea">Connect Wallet</a>
                 <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
                 <ul class="connect-wallet" id="connect-wallet">
                     <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
                     <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
                     <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
-                    <li class="wallet-link">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link" onclick="connectMetamask()">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
                     <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
                 </ul>
                 </div>
@@ -243,6 +245,8 @@
             </ul>
         </div>
     </footer>
+     <!-- NFT Lotto contract functions -->
+     <script src="./javascript/blockchain.js"></script>
     <!--custom script  -->
     <script src="./javascript/playscreen.js"></script>
     <script src="./javascript/script.js"></script>
