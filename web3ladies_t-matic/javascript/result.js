@@ -1,4 +1,5 @@
 const result = document.querySelector(".table-row");
+console.log(result)
 result.addEventListener("click",(e) => {
-  window.open("./reward.html","_parent")
+  window.open("claim-reward.html","_parent")
 })

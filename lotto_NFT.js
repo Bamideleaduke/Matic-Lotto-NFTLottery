@@ -1,10 +1,17 @@
 const { ethers } = require("ethers");
 import "./LotteryABI.json";
 
+try {
+	const connectAddress = async () => {
+		const provider = new ethers.providers.Web3Provider(window.ethereum);
+		await provider.send("eth_requestAccounts", []);
+		const signer = provider.getSigner();
+	}
+	
+} catch (error) {
+	console.log(error)
+}
 
-const provider = new ethers.providers.Web3Provider(window.ethereum);
-await provider.send("eth_requestAccounts", []);
-const signer = provider.getSigner();
 
 const lotteryAddress = "0x311686cf48d67ce5e41ef17c778d590bae532459";
 const lotteryABI = [

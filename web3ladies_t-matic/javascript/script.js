@@ -1,8 +1,4 @@
-// admin page
-const admin = document.querySelector(".admin");
-admin.addEventListener("click",(e) => {
-  window.open("web3ladies_t-matic/admin.html","_black")
-})
+
 
 // header collapsible
 const toggle = document.querySelector(".menu-bar");
@@ -21,7 +17,7 @@ navItem.forEach(link => {
     collapsible.classList.toggle('hide')
     })
 });
-  
+
 // connect wallet
 const connectWallet = document.querySelector(".connect-btn");
 const walletOption = document.querySelector("#connect-wallet");
@@ -42,6 +38,10 @@ walletLink.forEach(wallet => {
 
 // connect wallet
 
-
+// admin page
+// const admin = document.querySelector("#admin");
+// admin.addEventListener("click",(e) => {
+//   window.open("web3ladies_t-matic/admin.html","_parent")
+// })
 
 
