@@ -41,7 +41,7 @@ walletLink.forEach(wallet => {
 // admin page
 const admin = document.querySelector("#admin");
 admin.addEventListener("click",(e) => {
-  window.open("web3ladies_t-matic/admin.html","_parent")
+  window.open("web3ladies_t-matic/admin.html","_blank")
 })
 
 
