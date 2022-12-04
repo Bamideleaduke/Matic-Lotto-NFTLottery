@@ -1,4 +1,5 @@
-const { ethers } = require("ethers");
+// const { ethers } = require("ethers");
+import { ethers } from "./ether.js";
 import "./LotteryABI.json";
 
 try {

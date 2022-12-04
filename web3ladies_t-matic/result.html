@@ -41,13 +41,13 @@
                     <li class="nav-item"><a class="nav-link" href="#">How to play</a></li>
                 </ul>
                 <div class="btn">
-                <a class="connect-btn">Connect Wallet</a>
+                <a class="connect-btn" id="accountArea">Connect Wallet</a>
                 <span class="close-bar"><i class="fa-solid fa-xmark"></i></span>
                 <ul class="connect-wallet" id="connect-wallet">
                     <li class="wallet-link">Select your wallet <span class="close-opt"><i class="fa-solid fa-xmark"></i></span></li>
                     <li class="wallet-link">Phantom <img src="./assets/icons/phantom.png" alt=""></li>
                     <li class="wallet-link" >Slope <img src="./assets/icons/slope.png" alt=""></li>
-                    <li class="wallet-link">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
+                    <li class="wallet-link"onclick="connectMetamask()">Metamask <img src="./assets/icons/metamask.png" alt="metamask"></li>
                     <li class="wallet-link">More Options<span class="dwn-angle"><i class="fa-solid fa-angle-down"></i></span></li>
                 </ul>
                 </div>
@@ -139,6 +139,7 @@
             </ul>
         </div>
     </footer>
+    <script src="./javascript/blockchain.js"></script>
     <!--custom script  -->
     <script src="./javascript/script.js"></script>
     <script src="./javascript/result.js"></script>
