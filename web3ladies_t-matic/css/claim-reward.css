@@ -220,4 +220,16 @@ li {
   color: #76E1B5;                                                
 }
 
+.eth-reward{
+  font-weight: lighter;
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  font-size: 0.7rem;
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 1px solid transparent;
+  display: block;
+  margin-inline: auto;
+  margin-top: 1rem;
+}
 /* HAFSAH */
