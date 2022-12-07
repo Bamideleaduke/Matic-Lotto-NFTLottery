@@ -203,7 +203,7 @@ li {
   flex-direction: column;
 }
 .sold-out-btn {
-  height: 18px;
+  height: 10px;
   font-family: "Clash Display Variable";
   font-style: normal;
   font-weight: 500;
@@ -221,10 +221,11 @@ li {
   /* padding: 8px; */
   gap: 8px;
   width: 77px;
-  height: 30px;
+  height: 20px;
   background: #f9bd25;
   border-radius: 2px;
   margin-bottom: 5px;
+  padding-top: 10px;
 }
 .tickets {
   font-family: "Inter";
@@ -333,8 +334,10 @@ li {
   }
 
   .sold-out-btn {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 5px;
+    margin-top: 5px;
+    
   }
   .btn-div {
     padding: 2px;
