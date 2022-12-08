@@ -1,6 +1,5 @@
-// const { ethers } = require("ethers");
-import { ethers } from "./ether.js";
-import "./LotteryABI.json";
+
+const signer = provider.getSigner();
 
 try {
 	const connectAddress = async () => {
@@ -311,13 +310,19 @@ const lotteryABI = [
 	}
 ];
 
-const lotteryContract = new ethers.Contract(lotteryAddress, lotteryABI, provider);
+const lotteryContract = new ethers.Contract(lotteryAddress, lotteryABI, signer);
 
-const lotteryWithSigner = contract.connect(signer);
+const lotteryWithSigner = lotteryContract.connect(signer);
+
 
 const participate = async() => {
-	let participating = await lotteryContract.participate(_firtNum,_secondNum,_thirdNum, {value: ethers.utils.parseEther(1)});
-	await participate.wait();
+	let participating =  lotteryContract.participate('1','2','3')
+	await provider.send('eth_requestAccounts',[]);
+
+    signer = await provider.getSigner();
+		
+	await participating.wait();
+	window. location. replace("../Matic-Lotto-NFTLottery/web3ladies_t-matic/reward.html");
 }
 
 const roundCreation = async() => {
@@ -335,8 +340,8 @@ const claimPrize = async() => {
 	await prizeClaim.wait();
 } 
 
-const getCurrentRound = await lotteryContract.round();
-const _winningNumbers = await lotteryContract.winner();
-const _winningAddress = await lotteryContract.winningAddress();
-const _winningTime = await lotteryContract.winningTime();
-const _adminAddress = await lotteryContract.admin();
+// const getCurrentRound =  lotteryContract.round();
+// const _winningNumbers =  lotteryContract.winner();
+// const _winningAddress =  lotteryContract.winningAddress();
+// const _winningTime =  lotteryContract.winningTime();
+// const _adminAddress =  lotteryContract.admin();
