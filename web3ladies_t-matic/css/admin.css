@@ -94,8 +94,9 @@
     font-size: 2.2rem;
   }
   .generate{
+    width: 100%;
     display: flex;
-    justify-content: center;
+    /* border:  solid red; */
   }
   .generate-btn{
     margin-right: 1.5rem;
@@ -108,12 +109,12 @@
     border: 1px solid transparent;
   }
   .loading{
-    height: 20px;
-    width: 200px;
+    height: 27px;
+    width: 60%;
     background-color:#D9D9D9 ;
   }
   .percent{
-    height: 20px;
+    height: 27px;
     width: 50%;
     background-color:#76E1B5
   }
@@ -217,6 +218,10 @@ tbody tr:hover{
     width: 60px;
     height: 60px;
     font-size: 1.4rem;
+  }
+  .generate{
+    margin-left: 3rem;
+
   }
   .generate-btn{
     margin-right: 1.5rem;
