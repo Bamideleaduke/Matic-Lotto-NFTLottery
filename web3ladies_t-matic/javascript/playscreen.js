@@ -4,6 +4,7 @@
 // play game event
   const inputBox = document.querySelectorAll(".num-input")
   const numBtn = document.querySelectorAll(".num");
+  let selectedNumbers;
   // console.log(inputBox);
  
   // select number
@@ -20,6 +21,10 @@
 
     inputBox.forEach((ele,idx)=> {
       ele.textContent = value[idx]
+<<<<<<< HEAD
+=======
+       selectedNumbers = value
+>>>>>>> 20b9388cee5902593c043a65287609182571129d
     });
 
     
