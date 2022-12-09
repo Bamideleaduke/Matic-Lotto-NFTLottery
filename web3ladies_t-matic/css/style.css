@@ -30,8 +30,7 @@ body {
   scroll-behavior: smooth;
   background: var(--bg-black);
   color: var(--txt-color);
-  font-family: sans-serif;
-  /* max-width: 1400px; */
+  font-family: 'Clash Display', sans-serif;
   margin-inline: auto;
   overflow-y: scroll;
 }
@@ -494,7 +493,7 @@ border-bottom: 0;
   }
   .hero-txt h1 {
     margin-top: 2rem;
-    font-size: 4rem;
+    font-size: 5rem;
     line-height: 75px;
     font-weight: 700;
   }
