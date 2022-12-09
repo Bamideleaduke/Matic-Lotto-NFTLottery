@@ -272,12 +272,12 @@ small{
     .profile-card{
         width: 50%;
     }
-    .confirm{
-        width: 70%;
+    .confirm, .game-info{
+        width: 60%;
         margin-inline: auto;
     }
-   
-    .game-num,.game-info{
+  
+    .game-num{
         width: 70%;
         margin-inline: auto;
     }
