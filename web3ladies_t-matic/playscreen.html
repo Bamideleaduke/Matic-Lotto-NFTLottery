@@ -103,7 +103,13 @@
             <li class="num-input"></li>
             <li class="num-input"></li>
         </ul>
-
+        <div class="game-info">
+    <p>Select six (6) digits and continue</p>
+    <div class="info-btn">
+        <button class="i-btn clear">Clear</button>
+        <button class="i-btn pick">Quick Pick</button>
+    </div>
+</div>
         <ul class="game-num">
             <li class="num">1</li>
             <li class="num">2</li>
@@ -206,8 +212,15 @@
             <li class="num">99</li>
         </ul>
 
-        <p class="draw-num"><span>1</span> draw</p>
+       <div class="confirm">
+        <select name="draw" id="draw" class="draw">
+            <option>1 draw</option>
+            <option>2 draw</option>
+        </select>
+        <br>
+       <!-- <a href="./reward.html" target="_parent"><button class="confirm-draw">Confirm Transaction</button></a> -->
        <a  target="_parent"><button class="confirm-draw" onclick="participate()">Confirm Transaction</button></a> 
+       </div> 
     </section>
     <!-- Barakat -->
    

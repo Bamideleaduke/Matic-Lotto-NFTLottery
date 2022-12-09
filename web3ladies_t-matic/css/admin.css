@@ -118,6 +118,16 @@
     width: 50%;
     background-color:#76E1B5
   }
+  .publish{
+    margin-top: 2rem;
+    background-color: var(--purple-btn-bg);
+    padding: 0.5rem 2rem;
+    border: none;
+    color: var(--white);
+    display: block;
+    width: 200px;
+    margin-inline: auto;
+  }
 /* table */
 table{
   text-align: center; 

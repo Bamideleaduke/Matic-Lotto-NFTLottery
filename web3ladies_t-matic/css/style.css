@@ -131,8 +131,21 @@ li {
   line-height: 25px;
   font-size: 0.8rem;
 }
+.play-now{
+  background-color: var(--purple-btn-bg);
+  font-weight: lighter;
+  color: var(--white);
+  padding: 0.7rem 3rem;
+  font-size: 0.9rem;
+}
+.play-now:hover{
+  background: linear-gradient(black, black) padding-box,
+    linear-gradient(to right, darkblue, darkorchid) border-box;
+  border: 1px solid transparent;
+  color: var(--white);
+
+}
 .read-more {
-  /* cursor: pointer; */
   font-weight: lighter;
   color: var(--white);
   padding: 0.6rem 1.2rem;
@@ -160,6 +173,9 @@ li {
   flex-direction: column;
   align-items: center;
   margin-top: 2rem;
+  border: 0.001px solid #924eda7b;
+  position: relative;
+  padding: 2rem 0.6rem 0.7rem 0.6rem;
 }
 .step-message p {
   font-size: 0.8rem;
@@ -169,6 +185,8 @@ li {
   padding: 0.2rem;
   border-radius: 50%;
   margin-bottom: 1.5rem;
+  position: absolute;
+  top: -10px;
 }
 .hero-step {
   margin: 1.5rem 0;
@@ -449,6 +467,10 @@ border-bottom: 0;
   .hero-txt p {
     font-size: 1rem;
     width: 350px;
+  }
+  .step-message{
+  padding: 4rem 2rem 0.7rem 2rem;
+
   }
   .hero-step h2 {
     font-size: 2.5rem;

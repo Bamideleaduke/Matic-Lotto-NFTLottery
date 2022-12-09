@@ -157,7 +157,31 @@ small{
 .play-btn .rule, .play-btn .result{
     font-size: 0.8rem;
 }
-
+/* game info */
+.game-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pick{
+    background-color: var(--green-btn-bg);
+}
+.pick:hover{
+    background: var(--bg-black);
+    border: 2px solid var(--green-btn-bg);
+}
+.clear{
+    background: none;
+}
+.clear:hover{
+   border:2px solid var(--green-btn-bg);
+}
+.i-btn{
+    margin: 1rem 0 2rem 0;
+    color: var(--white);
+    padding: 0.4rem 1.5rem;
+    border: none;
+}
 /* game section */
 .value-input{
     display: flex;
@@ -196,10 +220,23 @@ small{
     justify-content: center;
     align-items: center;
 }
+.num:hover{
+    background-color: var(--green-btn-bg);
+}
 .draw-num{
     margin: 3rem 0;
     cursor: pointer;
 }
+.draw{
+    margin-top: 2rem;
+    width: 100%;
+    background-color:var(--bg-black);
+    color: var(--white);
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+    border: 0.2px solid #ffffff3d;
+    outline: none;
+  }
 .confirm-draw{
     cursor: pointer;
     background-color: var(--purple-btn-bg);
@@ -221,12 +258,25 @@ small{
    small{
     text-align: left;
    }
+  .i-btn{
+    margin: 0;
+  }
+   .game-info{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+   }
 }
  
 @media only screen and (min-width:1000px){
     .profile-card{
         width: 50%;
     }
+    .confirm, .game-info{
+        width: 60%;
+        margin-inline: auto;
+    }
+  
     .game-num{
         width: 70%;
         margin-inline: auto;
