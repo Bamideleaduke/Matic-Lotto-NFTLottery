@@ -42,7 +42,14 @@ walletLink.forEach(wallet => {
 const admin = document.querySelector("#adminn");
 console.log(admin)
 admin?.addEventListener("click",(e) => {
-  window.open("web3ladies_t-matic/admin.html","_blank")
+
+let adminAccess = prompt("Input Access Code");
+  if(adminAccess === "12345"){
+    window.open("web3ladies_t-matic/admin.html","_blank")
+  }else{
+    alert("Opppss! Access Denied")
+  }
+
 })
 
 

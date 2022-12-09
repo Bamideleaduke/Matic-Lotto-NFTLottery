@@ -20,12 +20,18 @@
 
     inputBox.forEach((ele,idx)=> {
       ele.textContent = value[idx]
-      console.log(value);
     });
+
+    
     // this.removeEventListener("click",playGame)
   }
   numBtn.forEach(num => { 
+    num.addEventListener("click",() => {
+    num.style.backgroundColor = "green"   
+    })
       num.addEventListener("click",playGame)
+      // num.style.backgroundColor = "green"
+      
   });
     // get value
     
