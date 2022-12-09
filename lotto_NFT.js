@@ -314,7 +314,7 @@ const participate = async () => {
   const tx = await lotteryWithSigner.participate(fNumber, sNumber, tNumber);
   const txResponse = await tx.wait();
   if ((txResponse.status = 1)) {
-		alert("You are now a particpate");
+		alert("You are now a participant");
     window.location.replace("/web3ladies_t-matic/reward.html");
   } else {
     alert("Transaction was not successful,Kindly try again");

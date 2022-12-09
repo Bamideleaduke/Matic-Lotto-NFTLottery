@@ -4,6 +4,7 @@
 // play game event
   const inputBox = document.querySelectorAll(".num-input")
   const numBtn = document.querySelectorAll(".num");
+  let selectedNumbers;
   // console.log(inputBox);
  
   // select number
@@ -20,7 +21,7 @@
 
     inputBox.forEach((ele,idx)=> {
       ele.textContent = value[idx]
-      console.log(value);
+       selectedNumbers = value
     });
     // this.removeEventListener("click",playGame)
   }
