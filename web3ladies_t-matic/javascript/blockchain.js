@@ -1,3 +1,4 @@
+let provider = new ethers.providers.Web3Provider(window.ethereum)
 
 
 let accArea = document.getElementById("accountArea");
@@ -19,7 +20,6 @@ const connectMetamask = async () =>{
 }
 
   
-// let provider = new ethers.providers.Web3Provider(window.ethereum)
 // let isMetaMaskConnected = () => ethereum.isConnected()
 // // Connect Metamask with Dapp
 // const connectMetamask = async () => {
