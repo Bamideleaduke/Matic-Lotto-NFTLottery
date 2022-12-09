@@ -27,8 +27,7 @@
     scroll-behavior: smooth;
     background: var(--bg-black);
     color: var(--txt-color);
-    font-family: sans-serif;
-    /* max-width: 1400px; */
+    font-family: 'Clash Display', sans-serif;
     margin-inline: auto;
   }
   main,
