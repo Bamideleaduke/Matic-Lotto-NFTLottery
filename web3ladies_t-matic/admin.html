@@ -8,7 +8,8 @@
     <!-- <script type="application/javascript" src="https://cdn.ethers.io/lib/ethers-5.2.esm.min.js"></script> -->
     <script src="./javascript/script.js" defer></script>
     <script src="./javascript/blockchain.js" defer></script>
-
+ <!-- font family -->
+ <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap" rel="stylesheet">
     <!-- fontawesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -123,11 +124,14 @@
         <p class="info">Generate number and view the winners for the draw
             <br>
             <br>
-            <span>1 draw</span>
+            <select name="draw" id="draw" class="draw">
+                <option>1 draw</option>
+                <option>2 draw</option>
+            </select>
         </p>
        </div>
         <div class="generate">
-            <button class="generate-btn">Generate Number</button>
+            <button class="generate-btn" onclick="pickwinner()">Generate Number</button>
             <div class="loading">
                 <div class="percent"></div>
             </div>
@@ -140,6 +144,7 @@
             <li>65</li>
             <li>4</li>
         </ul>
+        <button class="publish">Publish</button>
     </div>
     <div class="result-table">
         <div class="result-info">
@@ -216,6 +221,16 @@
             </ul>
         </div>
     </footer>
+    <script
+    src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+    type="application/javascript">
+  </script>
+     <!-- NFT Lotto contract functions -->
+     <script type="text/javascript" src="./javascript/blockchain.js"></script>
+     <script type="text/javascript" src="/lotto_NFT.js"></script>
+    <!--custom script  -->
+    <script src="./javascript/playscreen.js"></script>
+    <script src="./javascript/script.js"></script>
     <!-- NFT Lotto contract functions -->
 
     <!--custom script  -->
