@@ -68,28 +68,53 @@
     place-content: center;
     margin-top: 2rem;
   }
-
+.nft-reward{
+  margin-top: 2rem;
+}
+.nft{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6rem;
+}
+h3 {
+  color:#76E1B5;
+  padding: 0.6rem 0 0 0;
+}
+h4 {
+  padding: 0.6rem 0;
+}
+.nft-note {
+  padding: 0  0.5rem;
+  text-align: left;
+}
+.nft-heading{
+  text-align: center;
+    }
+.nft-heading p{
+      padding-bottom: 1rem;
+    }
+h1 {
+    padding-bottom: 1rem;
+  } 
 /* Glory's part */
 
 @media only screen and (min-width:768px){
   .nft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.6rem;
+    flex-direction: row;
+    
   }
   h3 {
     color:#76E1B5;
-    ;
-    padding: 0.6rem 0 00;
+    padding: 0.6rem 0 0 0;
   }
   h4 {
     padding: 0.6rem 0;
   }
   .nft-note {
-    padding-top: 3rem;
-    text-align: center;
+    /* padding-top: 3rem; */
+    text-align: left;
   }
   .nft-heading{
     text-align: center;
@@ -102,39 +127,6 @@
       padding-bottom: 1rem;
     }
 }
-
-@media only screen and (max-width:768px){
-  
-  .nft{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: 1.6rem;
-  }
-  h3 {
-    color:#76E1B5;
-    ;
-    padding: 0.6rem 0 00;
-  }
-  h4 {
-    padding: 0.6rem 0;
-  }
-  .nft-note {
-    padding-top: 3rem;
-    text-align: center;
-  }
-  .nft-heading{
-    text-align: center;
-      }
-  .nft-heading p{
-        padding-bottom: 3rem;
-      }
-  h1 {
-      padding-bottom: 1rem;
-    }
-}
-
 
 @media only screen and (min-width:1017px){
   .nft-heading{
@@ -161,7 +153,10 @@ text-align: center;
   h4 {
     padding: 0.6rem 0;
   }
-
+.nft{
+  width: 80%;
+  margin-inline: auto;
+}
 
 
 

@@ -60,8 +60,8 @@ nav {
 }
 /* connect wallet */
 .connect-wallet {
-  background-color: var(--bg-black);
-  padding: 0.7rem;
+  background-color: #04081db5;
+  padding: 0 0.3rem;
   position: fixed;
   display: none;
   bottom: 32%;
@@ -178,10 +178,13 @@ padding: 0 2rem;
     }
     .connect-wallet {
       bottom: 0;
-      top: 2rem;
+      top: 3rem;
+      right: 0.5rem;
       z-index: 1;
-      width: 190px;
+      width: 195px;
+      height: 250px;
     }
+    
     /* header section*/
     
     /* footer */

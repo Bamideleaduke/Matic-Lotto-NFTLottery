@@ -70,7 +70,8 @@
   }
 /* user profile */
 .profile-card{
-   width: 2px solid red;
+   background-color: #04081D;
+   padding: 0.5rem 1rem;
     align-items: flex-start;
     margin-top: 3rem;
     margin-inline: auto;
@@ -144,12 +145,14 @@ small{
     display: flex;
     margin-top: 1rem;
     align-items: center;
+    color: var(--txt-color);
 }
 .play-btn .rule{
     padding-right: 1rem ;
 }
 .play-btn .result{
     background-color: var(--green-btn-bg);
+    color: var(--txt-color);
     padding: 0.7rem 2rem ;
 
 }
@@ -246,10 +249,10 @@ small{
 }
 @media only screen and (min-width:768px) {
     .profile-card{
-        width: 2px auto red;
-        width: 65%;
+        width: 80%;
         margin-inline: auto;
         display: flex;
+        padding: 0.5rem 3rem;
     }
     .user-card{
         flex-direction: column;
@@ -269,7 +272,9 @@ small{
  
 @media only screen and (min-width:1000px){
     .profile-card{
-        width: 50%;
+        width: 60%;
+        padding: 1rem 5rem;
+
     }
     .confirm, .game-info{
         width: 60%;
@@ -280,14 +285,12 @@ small{
         width: 70%;
         margin-inline: auto;
     }
-/* 
-    .num-input{
-        width: 70px;
-        height: 70px;
-        font-size: 2.5rem;
+
+}
+@media only screen and (min-width:1200px){
+    .profile-card{
+        width: 50%;
+        padding: 1rem 5rem;
+
     }
-    .num{
-        width: 70px;
-        height: 70px;
-    } */
 }

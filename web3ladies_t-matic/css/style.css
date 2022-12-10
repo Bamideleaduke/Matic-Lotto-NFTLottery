@@ -174,7 +174,7 @@ li {
   margin-top: 2rem;
   border: 0.001px solid #924eda7b;
   position: relative;
-  padding: 2rem 0.6rem 0.7rem 0.6rem;
+  padding: 1.5rem 0.4rem 1.5rem 0.4rem;
 }
 .step-message p {
   font-size: 0.8rem;
@@ -330,7 +330,6 @@ li {
   box-sizing: border-box;
   margin: 4px;
   margin-top: 25px;
-  /* border-radius: px; */
 }
 
 .input-box {
@@ -340,13 +339,13 @@ li {
   margin: 4rem 0;
 }
 .numbers {
-  font-weight: 700;
+  font-weight: 500;
   border: none;
-  width: 45px;
-  height: 45px;
-  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
   background-color: #067044;
-  margin: 0 0.4rem;
+  margin: 0 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -488,7 +487,7 @@ li {
     width: 350px;
   }
   .step-message{
-  padding: 4rem 2rem 0.7rem 2rem;
+  padding: 3rem 2.5rem 3rem 2.5rem;
 
   }
   .hero-step h2 {
@@ -510,6 +509,13 @@ li {
   }
   header {
     padding: 0 1.5rem;
+  }
+  .h-bg{
+    padding: 0.4rem;
+    top: -20px;
+  }
+  .h-bg img{
+    width: 30px;
   }
   .hero-txt h1 {
     margin-top: 2rem;

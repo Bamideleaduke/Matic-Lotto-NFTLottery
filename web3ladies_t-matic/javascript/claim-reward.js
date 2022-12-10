@@ -1,8 +1,8 @@
 const connect = document.getElementById('connect')
 const claimReward = document.querySelector(".eth-reward")
 claimReward.addEventListener("click",() => {
-    alert(`1Eth has been added to your wallet
-    Thank You
+    alert(`3 matic has been added to your wallet
+               Thank You 🎉
     `)
 })
 
